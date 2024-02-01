@@ -1,1 +1,88 @@
 /* You can add global styles to this file, and also import other style files */
+:root{
+    --main-color: #42484b;
+}
+.cursor-pointer{
+    cursor: pointer !important;
+}
+i{
+    transition: all 0.5s;
+}
+i:hover{
+    color: var(--main-color);
+}
+.bg-special{
+    background-color: var(--main-color) !important;
+}
+.layer{
+    position: absolute;
+    top: 110%;
+    left: 0;
+    right: 0;
+    bottom:0;
+    background-color: rgba(250, 235, 215, 0.492);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    opacity: 0;
+    transition: all 0.8s;
+}
+.scaling{
+    transition: transform 0.4s;
+}
+.scaling:hover{
+    transform: scale(1.03,1.03);
+}
+.scaling:hover .layer {
+    top: 0;
+    opacity: 1;
+}
+.text-special{
+    color: var(--main-color);
+}
+.w-48{
+    width: 48% !important;
+}
+/* ---------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------- */
+
+/* Large desktop */
+@media (min-width: 1200px) {
+
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+.w-r-100{
+    width: 100% !important;
+}
+.mb-r-2{
+    margin-bottom: .5rem;
+}
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+.w-r-100{
+    width: 100% !important;
+}
+.mb-r-2{
+    margin-bottom: .5rem;
+}
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+.w-r-100{
+    width: 100% !important;
+}
+.mb-r-2{
+    margin-bottom: .5rem;
+}
+}
